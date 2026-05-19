@@ -1,0 +1,33 @@
+You can transfer a local file to an Amazon Web Services Amazon EC2 server using the scp command.
+
+
+*Syntax
+
+
+scp -i <key.pem> <local-file-path> <username>@<public-ip>:<destination-path>
+
+
+*Example
+
+scp -i mykey.pem test.txt ubuntu@13.233.100.10:/home/ubuntu/
+
+
+*Explanation
+
+scp → Secure Copy command
+-i mykey.pem → Private key file for EC2 access
+test.txt → Local file name
+ubuntu → EC2 username
+13.233.100.10 → EC2 public IP address
+/home/ubuntu/ → Destination path in EC2 server
+Common Usernames
+Ubuntu AMI → ubuntu
+Amazon Linux → ec2-user
+CentOS → centos
+
+
+* Check the file in ec2
+* Check the directory cd /home/ubuntu
+
+
+
