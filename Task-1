@@ -1,11 +1,8 @@
 You can transfer a local file to an Amazon Web Services Amazon EC2 server using the scp command.
 
-
 *Syntax
 
-
 scp -i <key.pem> <local-file-path> <username>@<public-ip>:<destination-path>
-
 
 *Example
 
